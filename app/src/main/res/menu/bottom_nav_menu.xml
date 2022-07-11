@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/apps"
+        android:icon="@drawable/baseline_apps_24"
+        android:title="Apps"
+        android:contentDescription="所有的功能和应用"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/more"
+        android:icon="@drawable/button_icon"
+        android:title="More"
+        android:contentDescription="更多没有展示的功能"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/setting"
+        android:icon="@drawable/baseline_settings_24"
+        android:title="Settings"
+        android:contentDescription="应用的设置中心"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.apps.demo.adapter.SimpleAdapterActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/simple_adapter_mtb"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/baseline_arrow_back_24"
+        app:title="SimpleAdapter" />
+
+    <ListView
+        android:id="@+id/simple_adapter_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:listSelector="?android:attr/selectableItemBackground" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/simple_adapter_bab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hideOnScroll="true"
+        android:layout_gravity="bottom"
+        app:navigationIcon="@drawable/baseline_arrow_back_24" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/simple_adapter_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/button_icon"
+        app:layout_anchor="@id/simple_adapter_bab" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

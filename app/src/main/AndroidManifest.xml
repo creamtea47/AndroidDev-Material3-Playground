@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity
+            android:name=".view.apps.demo.dialog.DialogMainDemoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.apps.demo.DialogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.apps.demo.adapter.BaseAdapterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.apps.demo.chip.ChipMainDemoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.apps.demo.ChipActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.apps.demo.adapter.SimpleAdapterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.apps.demo.adapter.ArrayAdapterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.apps.demo.AdapterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

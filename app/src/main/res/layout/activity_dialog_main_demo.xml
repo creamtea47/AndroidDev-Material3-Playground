@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.apps.demo.dialog.DialogMainDemoActivity">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/dialog_main_mtb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/baseline_arrow_back_24"
+            app:title="Dialogs" />
+
+        <ListView
+            android:id="@+id/dialog_main_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
