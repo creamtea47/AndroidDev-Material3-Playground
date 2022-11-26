@@ -24,11 +24,11 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:layout_width="wrap_content"
-        android:lineHeight="20dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
+        android:lineHeight="20dp"
         android:text="实际开发中，大多数 UI 控件都需要 Adapter。\nAdapter 是用来帮助填充数据的中间桥梁，使其可以将不同形式的数据源源绑定到控件上，就类似 Vue 的 v-for。" />
 
     <ListView

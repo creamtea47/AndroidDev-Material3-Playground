@@ -1,14 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.myapplication">
+    package="com.la.playground3">
+    <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
+        <activity
+            android:name=".view.apps.demo.chart.MPAndroidChartMainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_mpandroid_chart_main"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name=".view.apps.demo.MPAndroidChartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.apps.demo.sensor.SensoRedPacketDemoActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".view.apps.demo.sensor.SensorMainDemoActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".view.apps.demo.SensorActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".view.apps.demo.dialog.DialogMainDemoActivity"
             android:exported="false" />

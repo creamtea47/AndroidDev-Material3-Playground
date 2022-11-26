@@ -139,4 +139,8 @@
     </string>
     <string name="action_settings">Settings</string>
     <string name="description">Description</string>
+    <string name="title_activity_mpandroid_chart_main">MPAndroidChartMainActivity</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>

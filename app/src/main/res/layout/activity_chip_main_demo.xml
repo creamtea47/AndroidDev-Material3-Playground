@@ -9,8 +9,8 @@
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/chip_main_mtb"
@@ -160,13 +160,13 @@
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip_main_c_action_enable_close"
-                app:closeIconEnabled="true"
                 style="@style/Widget.MaterialComponents.Chip.Action"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
-                android:text="Action Chip" />
+                android:text="Action Chip"
+                app:closeIconEnabled="true" />
         </RelativeLayout>
 
         <!-- Enabled Icon Action Chip -->
@@ -186,13 +186,13 @@
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip_main_c_action_enable_icon"
-                app:chipIcon="@drawable/baseline_self_improvement_24"
                 style="@style/Widget.MaterialComponents.Chip.Action"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
-                android:text="Action Chip" />
+                android:text="Action Chip"
+                app:chipIcon="@drawable/baseline_self_improvement_24" />
         </RelativeLayout>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
