@@ -17,6 +17,7 @@ import com.la.playground3.common.CustomFragment;
 import com.la.playground3.entity.AppsListViewBean;
 import com.la.playground3.view.apps.demo.AdapterActivity;
 import com.la.playground3.view.apps.demo.ChipActivity;
+import com.la.playground3.view.apps.demo.CityPickerActivity;
 import com.la.playground3.view.apps.demo.DialogActivity;
 import com.la.playground3.view.apps.demo.MPAndroidChartActivity;
 import com.la.playground3.view.apps.demo.SensorActivity;
@@ -51,7 +52,8 @@ public class AppsFragment extends CustomFragment {
         list.add(new AppsListViewBean("C", "Material Chips", "Material Chips 用例"));
         list.add(new AppsListViewBean("M", "Material Dialogs", "Material Dialogs 对话框"));
         list.add(new AppsListViewBean("M", "MPAndroidChart", "适用于 Android 的强大且易于使用的图表库"));
-        list.add(new AppsListViewBean("S", "Sensor Demo ", "传感器用例"));
+        list.add(new AppsListViewBean("S", "Sensor Demo", "传感器用例"));
+        list.add(new AppsListViewBean("C", "CityPicker 城市选择器", "CityPickerView 城市选择器"));
 
         AppsListViewAdapter appsListViewAdapter = new AppsListViewAdapter(customGetActivity(), (ArrayList<AppsListViewBean>) list);
         appsLv.setAdapter(appsListViewAdapter);
@@ -71,8 +73,11 @@ public class AppsFragment extends CustomFragment {
                     case "MPAndroidChart":
                         customStart(MPAndroidChartActivity.class);
                         break;
-                    case "Sensor Demo ":
+                    case "Sensor Demo":
                         customStart(SensorActivity.class);
+                        break;
+                    case "CityPicker 城市选择器":
+                        customStart(CityPickerActivity.class);
                         break;
                 }
             }
@@ -82,6 +87,6 @@ public class AppsFragment extends CustomFragment {
     }
 
     private void initView() {
-        appsLv = (ListView) view.findViewById(R.id.apps_lv);
+        appsLv = view.findViewById(R.id.apps_lv);
     }
 }
